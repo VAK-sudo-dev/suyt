@@ -164,7 +164,7 @@ export default function App() {
       {started && f.stage === "flower" && <p className="hint-line">{cfg.flowerHint}</p>}
 
       {started && <Modals modal={f.modal} cfg={cfg} onClose={f.close} />}
-      <audio ref={musicRef} src="/music/HuongDuong.mp3" loop preload="auto" />
+      <audio ref={musicRef} src={`${import.meta.env.BASE_URL}music/HuongDuong.mp3`} loop preload="auto" />
       {started && <SoundToggle muted={muted} volume={volume} onToggle={toggleSound} onVolumeChange={changeVolume} />}
 
       {!started && (

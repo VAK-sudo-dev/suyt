@@ -23,11 +23,11 @@ export const greetingConfig: GreetingConfig = {
   ],
   signature: '---VAK---',
   photos: [
-    '/images/greeting-photo.png',
-    '/images/2.jpeg',
-    '/images/3.jpeg'
+    `${import.meta.env.BASE_URL}images/greeting-photo.png`,
+    `${import.meta.env.BASE_URL}images/2.jpeg`,
+    `${import.meta.env.BASE_URL}images/3.jpeg`
   ],
-  photoFallback: '/images/greeting-photo-fallback.svg',
+  photoFallback: `${import.meta.env.BASE_URL}images/greeting-photo-fallback.svg`,
   photoAlt: 'Ảnh kèm theo thư',
   photoCaption: '20 · 10 — Ngày Phụ nữ Việt Nam',
 
